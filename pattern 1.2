@@ -1,1 +1,196 @@
+***
+***
+***
+//this pattern in java
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 0 ; i <= n ; i++){
+for(int j = 0 ; j <= n ; j++) {
+System.out.print("* ");
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+}
+------------------------------------------------------------------------------------------------
+* 
+* * 
+* * *
+* * * *
+* * * * *
+//for this pattern i will be from 0 to n but j will be equal to i and less than i
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 0 ; i <= n ; i++){
+for(int j = 0 ; j <= i ; j++) {
+System.out.print("* ");
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+}
+------------------------------------------------------------------------------------------------
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+//this pattern will have change in j
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 1 ; i <= n ; i++){
+for(int j = 1 ; j <= i ; j++) {
+System.out.print(j);
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+}
+------------------------------------------------------------------------------------------------
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+// for this pattern same as upper just we need to print i 
+public class Main {
+public static void pattern(int n ){
+for(int i = 1 ; i <= n ; i++){
+for(int j = 1 ; j <= i ; j++) {
+System.out.print(j);
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+}
+
+-----------------------------------------------------------------------------------------------
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+//this is simple as normal jus change in j loop 
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 1 ; i <= n ; i++){
+for(int j = n ; j >=i ; j--) {
+System.out.print("*");
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+}
+
+-----------------------------------------------------------------------------------------------
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2 
+1
+
+// for printing we need (n-j+1)
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 1 ; i <= n ; i++){
+for(int j = n ; j >=i ; j--) {
+System.out.print("*");
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+}
+-----------------------------------------------------------------------------------------------
+
+     *     
+    ***    
+   *****   
+  *******  
+ ********* 
+
+ //first loop for space second for stars
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 0 ; i < n ; i++){
+for(int j = 0 ; j < n-i-1; j++) {
+System.out.print(" ");
+}
+for(int j = 0 ; j<2*i+1 ; j++{
+System.out.println( "*");
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+} 
+
+-----------------------------------------------------------------------------------------------
+
+ *********
+  *******
+   ***** 
+    ***    
+     *
+
+public class Main {
+public static void pattern(int n ){
+for(int i = 0 ; i < n ; i++){
+for(int j = 0 ; j < i; j++) {
+System.out.print(" ");
+}
+for(int j = 0 ; j<2*n -(2*i+1) ; j++){
+System.out.print("*");
+}
+System.out.println();
+}
+}
+public static void main(String... args){
+        int n = 5;
+        pattern(n);
+    }
+} 
+
+---------------------------------------------------------------------------------------------
+//more patterns but i will contribute later
+
+
+
+
+
+
+
+
 
