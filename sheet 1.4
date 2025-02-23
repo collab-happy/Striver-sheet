@@ -1,0 +1,200 @@
+Count Digits
+Easy
+
+import java.util.*;
+
+public class Main {
+    public static void main (String... args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("enter the number to count");
+        int number = sc.nextInt();
+        
+        int count = 0;
+        while(number !=0){
+            number /= 10 ;             //or simply count = (int)(math.log10(number)+1)       
+            count++;
+        }
+        
+        System.out.print("no of digits is :" +count);
+    }
+}
+------------------------------------------------------------------------------------------------
+Reverse a Number
+Easy
+
+import java.util.*;
+
+public class Main {
+    public static void main (String... args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("enter the number to reverse");
+        int number = sc.nextInt();
+        
+        int reversed =0;
+        
+        while(number!=0){
+            int digits = number %10;
+            reversed = reversed * 10 + digits;
+            number /=10;
+        }
+        
+        
+        System.out.print("reverse number is :" +reversed);
+    }
+}
+------------------------------------------------------------------------------------------------
+Check Palindrome
+Easy
+
+import java.util.*;
+
+public class Main {
+    public static void main (String... args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("enter the number to reverse");
+        int number = sc.nextInt();
+        int original = number ;
+        int reversed =0;
+        
+        while(number!=0){
+            int digits = number %10;
+            reversed = reversed * 10 + digits;
+            number /=10;
+        }
+        
+        
+        System.out.print("reversed digit is :" +reversed);
+        
+        if(original==number){
+            System.out.print("pallindrome");
+        }
+        else{
+            System.out.print("not a pallindrome");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------
+GCD Or HCF
+Easy
+
+import java.util.*;
+
+public class Main {
+    public static void main (String... args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("enter the number to reverse");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+        while(b!=0){
+        int temp = b ;
+        b = a%b ;
+        a = temp ;
+        }
+        
+        System.out.print("gcd of a and b is :" +a);
+       
+    }
+}
+-----------------------------------------------------------------------------------------------
+Armstrong Numbers
+Easy
+
+import java.util.*;
+
+public class Main {
+    public static void main (String... args){
+        Scanner sc = new Scanner(System.in);
+        
+        int number = sc.nextInt();
+        int original = number;
+        int sum =0;
+        int digits = String.valueOf(number).length();
+        
+        while(number!=0){
+            int digit = number % 10 ;
+            sum += Math.pow(digit , digits);
+            number /=10;
+        }
+        
+       if(sum == original ){
+           System.out.print("armsstrong");
+       }
+        else{
+            System.out.print("not armsstrong");
+        }
+       
+    }
+}
+------------------------------------------------------------------------------------------------
+Print all Divisors
+Easy
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        System.out.print("Divisors of " + number + ": ");
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------
+Check for Prime
+Easy
+
+import java.util.*;
+public class Main {
+  public static void main(String... args){
+    Scanner sc = new Scanner(System.in);
+      System.out.println("enter the number");
+      int number = sc.nextInt();
+      boolean isprime = true ;
+
+      if(number <= 1){
+      isprime = false;
+}
+    for(int i = 2 ; i < Math.sqrt(number) ; i++ ){
+    if(number % i ==0){
+isprime = false ;
+break ;
+}
+}
+if (isprime){
+System.out.println("prime no")
+}else{
+System.out.println("not a prime no")
+}
+}
+}
+-----------------------------------------end of sheet 1.4 --------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
